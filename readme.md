@@ -1,5 +1,11 @@
 # Work In Progress Project 🚧
 
+![homepage-darkmode](screenshots/omepage-darkmode.png)
+![homepage-lightmode](screenshots/homepage-lightmode.png)
+![frontendforgeneratingcoverletter](screenshots\frontendforgeneratingcoverletter.png)
+
+
+
 ## Warning ⚠️
 This project is a work in progress. Half the stuff isn't working yet, so proceed with caution!
 
@@ -18,4 +24,4 @@ pip install -r requirements.txt
 python engine_docker.py
 
 # Visit Localhost
-# Open your browser and go to `localhost:3000`
+# Open your browser and go to `localhost:8080`
