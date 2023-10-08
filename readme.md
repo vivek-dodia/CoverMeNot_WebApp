@@ -38,5 +38,5 @@ GET methods to view them programmatically
 http://localhost:8080/listCoverLetters
 http://localhost:8080/keywords
 
-POST method to generate the cover letter programmatically via supplying the necessary variable in json format in body.
+POST method to generate the cover letter programmatically via supplying the necessary variables in json format in body.
 http://localhost:8080/generateCoverLetter
