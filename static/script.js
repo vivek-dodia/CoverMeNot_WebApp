@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // New logic to show keywords dictionary when the button is clicked
     viewKeywordsButton.addEventListener("click", function() {
         // This is new: Make an HTTP GET request to the Flask server's API endpoint for keywords
-        fetch("http://localhost:8080/keywords", {
+        fetch("http://localhost:8080/api/v1/keywords", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",

@@ -22,7 +22,7 @@ CORS(app, resources={
 def index():
     return render_template('index.html')  # Assuming your HTML file is in a templates folder
 
-@app.route('/generateCoverLetter', methods=['POST'])
+@app.route('/api/v1/generateCoverLetter', methods=['POST'])
 def generate_cover_letter_api():
     data = request.json
     Your_Name = data.get("Your_Name")
@@ -34,12 +34,12 @@ def generate_cover_letter_api():
     result = generate_letter(Your_Name, job_title, company_name, years_of_experience, job_url)
     return jsonify({"status": "success", "message": "Cover letter generated!", "result": result})
 
-@app.route('/listCoverLetters', methods=['GET'])
+@app.route('/api/v1/listCoverLetters', methods=['GET'])
 def list_cover_letters():
     # Your logic to list generated cover letters
     return jsonify({"status": "success", "message": "List of cover letters"})
 
-@app.route('/keywords', methods=['GET'])
+@app.route('/api/v1/keywords', methods=['GET'])
 def get_keywords():
     if request.method == 'OPTIONS':
         response = app.make_default_options_response()
