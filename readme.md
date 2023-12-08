@@ -35,8 +35,8 @@ also the API URLs are
 
 GET methods to view them programmatically
 
-http://localhost:8080/listCoverLetters
-http://localhost:8080/keywords
+http://localhost:8080/api/v1/listCoverLetters
+http://localhost:8080/api/v1/keywords
 
 POST method to generate the cover letter programmatically via supplying the necessary variables in json format in body.
-http://localhost:8080/generateCoverLetter
+http://localhost:8080/api/v1/generateCoverLetter
